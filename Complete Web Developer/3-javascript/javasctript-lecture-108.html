@@ -1,0 +1,32 @@
+
+
+<html>
+
+	<head>
+
+		<title>Javascript</title>
+
+	</head>
+
+	<body>
+
+		<div id="tweetDiv"></div>
+
+		<script type="text/javascript">
+
+			var tweetString = "";
+
+			var tweets = ["Hi Everyone", "MAGA!","Where we go one we go all","Welcome to the information war!"];		
+
+			for (var i = 0; i < tweets.length; i++){
+
+				tweetString += tweetString + "<p>" + tweets[i] + "</p>";
+				
+			}
+
+			document.getElementById("tweetDiv").InnerHTML = tweetString;
+		</script>
+
+	</body>
+
+</html>

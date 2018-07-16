@@ -1,0 +1,71 @@
+
+
+<html>
+
+    <head>
+        
+        <title>AJAX</title>
+
+
+        
+
+        <script type = "text/javascript" src="jquery.min.js"></script>
+
+        <script src="jquery-ui/jquery-ui.js"></script>
+
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+        <style type="text/css">
+
+            #droppable {
+                width: 50%;
+                height:40%;
+                border: 3px black solid;
+                margin: 50px
+            }
+            #draggable {
+                width: 200px;
+                height:200px;
+                border: 3px black solid;
+            }
+
+        </style>
+        
+
+
+    </head>
+
+    <body>
+
+
+
+        <ul id="sortable">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+  
+    
+       
+        
+        <script type="text/javascript">
+
+            $(function(){
+
+                $("#sortable").sortable();
+                $("#sortable").disableSelection();
+            });
+
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pass Date Information</title>
+    <style>
+        #container{
+            border: 2px solid black;
+            width:350px;
+            height:120px;
+            margin: 100px auto;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id ="container">
+        <label for="uname">User Name:</label>
+        <input id ="uname" type="text"><br><br>
+        <label for="pwd">User Name:</label>
+        <input id ="pwd" type="password"><br><br>
+        <button id="btnCreate">Create</button>
+        <div id="result">
+
+        </div>
+    </div>
+
+<script>
+    function passinfo()
+    {
+        var userName= document.getElementById("uname").value;
+        var password= document.getElementById("pwd").value;
+        var created =new Date().toJSON();
+        var jsObject ={uname:userName,pwd:password,timeCreated:created};
+        var jsonString =JSON.stringify(jsObject);
+        var url = "date-processing.php";
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST",url,true);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.send("input="+jsonString);
+        xmlhttp.onreadystatechange=function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                var output =xmlhttp.responseText;
+                var outputObject =JSON.parse(output);
+                document.getElementById("result").innerHTML="Your Username is "+outputObject.userName + ". Your subscription is valid up to " +outputObject.valid.date;
+            }
+
+            }
+        }
+
+    document.getElementById("btnCreate").onclick = passinfo()
+</script>
+</body>
+</html>

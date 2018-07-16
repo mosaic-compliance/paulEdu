@@ -1,0 +1,17 @@
+{	"Person":
+	{
+	"firstName":"Paulifer",
+	"lastName": "Cirino",
+	"Age": 25,
+	"Interest":["Croquet","Badminton","Table Tennis"],
+	"married": false,
+	"experience":["Javascript","MySQL","PHP"],
+	"Address":{
+				"Street": "4607 Rockingchair Drive",
+				"State":"Florida",
+				"Post":33567
+	}
+	}
+
+
+}

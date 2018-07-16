@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+
+			#blueCircle {
+				background-color: blue;
+				}
+			#redCircle {
+				background-color: red;
+				}
+			#yellowCircle {
+				background-color: yellow;
+				}
+			.clear {
+				clear:both;
+			}
+			.circle {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				float:left;
+				margin-right: 50px
+			}
+			#blueButton {
+				float:left;
+			}
+	</style>
+</head>
+<body>	
+	<div class="circle" id="blueCircle"></div>
+	<div class="circle" id="redCircle"></div>
+	<div class="circle" id="yellowCircle"></div>
+	<div class="clear"></div>
+
+	<script type="text/javascript">
+		document.getElementById("redCircle").onclick= function(){
+
+			document.getElementById("redCircle").style.display="none";
+
+		}
+		document.getElementById("blueCircle").onclick= function(){
+
+			document.getElementById("blueCircle").style.display="none";
+
+		}
+		document.getElementById("yellowCircle").onclick= function(){
+
+			document.getElementById("yellowCircle").style.display="none";
+
+		}
+
+
+	</script>
+</body>
+</html>

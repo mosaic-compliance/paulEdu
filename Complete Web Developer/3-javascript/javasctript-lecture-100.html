@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>	
+	<input id="textbox" type="text" name="tInput">
+	<button id="changeText">Change Text</button>
+
+	<p id="paragraphOne">This is some text</p>
+
+	<script type="text/javascript">
+			document.getElementById("changeText").onclick = function() {
+				var textEntered ="";
+				textEntered=document.getElementById("textbox").value;
+				document.getElementById("paragraphOne").innerHTML = textEntered
+			}
+
+
+	</script>
+</body>
+</html>

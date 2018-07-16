@@ -1,0 +1,54 @@
+{
+	"Inspirational":[
+		{
+			"title":"Mere Christianity" ,
+			"author":"C.S. Lewis",
+			"price":10.00
+		},
+		{
+			"title":"The Brothers Karamozov" ,
+			"author":"Fyodor Dostoyevsky",
+			"price": 11.99
+		},
+		{
+			"title":"War and Peace" ,
+			"author":"Leo Tolstoy",
+			"price":6.99
+		}
+	],
+	"IT":[
+		{
+			"title": "Python Programming",
+			"author": "John Zelle",
+			"price":19.99
+		},
+		{
+			"title": "Complete Web Developer 2.0",
+			"author": "Robin Percival III",
+			"price": 10.99
+		},
+		{
+			"title": "Jurassic Park",
+			"author":"Michale Crichton",
+			"price": 8.99
+		}
+
+	],
+	"Childrens":[
+				{
+			"title": "Green Eggs and Ham" ,
+			"author":"Dr. Seuss",
+			"price": 5.65
+		},
+		{
+			"title": "Cat in the Hat",
+			"author":"Dr. Seuss",
+			"price": 8.45
+		},
+		{
+			"title": "Curious George Goes Camping",
+			"author":"Margret Ray",
+			"price": 3.99
+		}
+	]
+}

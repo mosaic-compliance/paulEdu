@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>	
+	<p> How many fingers am I holding up?</p>
+	<p><input id="guessFingers" type="text"></p>
+	<p><button id = "guess">Guess</button></p>
+	<script type="text/javascript">
+			function getRndInteger(max, min){
+			return Math.floor(Math.random()*(max-min+1))+min;
+		}
+
+			document.getElementById("guess").onclick = function() {
+
+					var numFingersGuess = document.getElementById("guessFingers").value;
+
+ 					var numFingers = getRndInteger(5,0);
+
+ 					if (numFingers==numFingersGuess) {
+
+ 						alert("You got it right")
+ 					} else{
+
+ 						alert("It was " + numFingers+" Better luck next time") 				}
+					
+			}
+
+
+	</script>
+</body>
+</html>

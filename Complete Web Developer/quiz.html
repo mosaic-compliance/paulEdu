@@ -1,0 +1,118 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+            <title>Quiz</title>
+            <style type="text/css"></style>
+    </head>
+    <body>
+            <h1>Mosaic Employee Quiz</h1>
+                    <p id="question1" class="questions"></p>
+                            <p><select id="option1">
+                            <option id="a1">A.</option>
+                            <option id="b1">B</option>
+                            <option id="c1">C</option>
+                            <option id="d1">D</option>
+                    </select></p>
+                    <p id="question2" class="questions"></p>
+                            <p><select id="option2">
+                            <option id="a2">A</option>
+                            <option id="b2">B</option>
+                            <option id="c2">C</option>
+                            <option id="d2">D</option>
+                    </select></p>
+                    <p id="question3" class="questions"></p>
+                            <p><select id="option3">
+                            <option id="a3">A</option>
+                            <option id="b3">B</option>
+                            <option id="c3">C</option>
+                            <option id="d3">D</option>
+                    </select></p>                <button id = "submit">Submit</button>
+    
+    
+    
+    <script type="text/javascript">
+        var questions = ["How many Ganther children are there?", "How tall is Tyler?", "Who is Chads brother?", "What does Jim collect around the office?", "Where did Cynthia move here from?"];
+        var qIndex=[0,1,2,3,4]
+        var answers = [
+            ["17", "70","7","1 (Nick)"],
+            ["80cm","0.06 miles","78 inches","6\'2\""],
+            ["Nick","Alec","Aaron","Paul"],
+            ["Chairs","Liberal Tears","College Graduates","Mallards"],
+            ["Colorado Springs","New York","Timbuktu","North Pole"]
+        ]
+        var qleft=[0,0,0]
+        var letters=["A: ","B: ", "C: ","D: "]
+        var ids = ["a1","b1","c1","d1"]
+            window.onload = function() {
+                var rnd = Math.floor(Math.random() * 5);
+                document.getElementById("question1").innerHTML = questions[rnd];
+                i=0
+                while(i<4){
+                document.getElementById(ids[i]).innerHTML = letters[i]+answers[rnd] [i];
+                i++ }
+                var currentQuestion = questions.splice(rnd,1); 
+                var currentAnswer = answers.splice(rnd,1);
+                qleft[0]=qIndex.splice(rnd,1);
+                    ids = ["a2","b2","c2","d2"];
+                    rnd = Math.floor(Math.random() * 4);
+     
+                    document.getElementById("question2").innerHTML = questions[rnd];
+                    document.getElementById(ids[0]).innerHTML = letters[0]+answers[rnd] [0];
+                    document.getElementById(ids[1]).innerHTML = letters[1]+answers[rnd] [1];
+                    document.getElementById(ids[2]).innerHTML = letters[2]+answers[rnd] [2];
+                    document.getElementById(ids[3]).innerHTML = letters[3]+answers[rnd] [3];
+    
+                    var currentQuestion = questions.splice(rnd,1); 
+                    var currentAnswer = answers.splice(rnd,1);
+                    qleft[1]=qIndex.splice(rnd,1);
+
+                    ids = ["a3","b3","c3","d3"];
+                    rnd = Math.floor(Math.random() * 3);
+                    qleft[2]=qIndex.splice(rnd,1);
+    
+                    document.getElementById("question3").innerHTML = questions[rnd];
+                    i = 0
+                    while(i<4){
+                        document.getElementById(ids[i]).innerHTML = letters[i]+answers[rnd] [i];
+                        i++ }
+    
+    
+                    }
+    
+            var correctAnswers = ["C: 7", "C: 78 inches", "D: Paul", "D: Mallards", "B: New York"];
+            document.getElementById("submit").onclick = function () {
+                var qMissed = "";
+                if (correctAnswers[qleft [0]] == document.getElementById("option1").value) {
+    
+    
+                }   else {
+                    qMissed = qMissed + "You missed question 1. ";
+                }
+            if (correctAnswers[qleft [1]] == document.getElementById("option2").value) {
+    
+    
+                }   else {
+                    qMissed = qMissed + "You missed question 2. ";
+                }
+    
+            if (correctAnswers[qleft [2]] == document.getElementById("option3").value) {
+    
+    
+                }   else {
+                    qMissed = qMissed + "You missed question 3. ";
+    
+                }   
+    
+            if (qMissed == "") {
+                alert ("Good job! You are a Mosaic employee expert!");
+    
+            }   else {
+                alert(qMissed);
+            }
+        }
+    
+    
+    
+    </script>
+    </html>

@@ -1,0 +1,67 @@
+
+
+<html>
+
+    <head>
+        
+        <title>AJAX</title>
+
+
+        
+
+        <script type = "text/javascript" src="jquery.min.js"></script>
+
+        <script src="jquery-ui/jquery-ui.js"></script>
+
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+        <style type="text/css">
+
+            #droppable {
+                width: 50%;
+                height:40%;
+                border: 3px black solid;
+                margin: 50px
+            }
+            #draggable {
+                width: 200px;
+                height:200px;
+                border: 3px black solid;
+            }
+
+        </style>
+        
+
+
+    </head>
+
+    <body>
+
+        <div id="draggable">     
+            <p>Drag me!</p> 
+        </div>
+
+        <div id="droppable">  
+            <p>Drop me here!</p>       
+        
+    
+        </div>
+        
+        <script type="text/javascript">
+
+            $("#draggable").draggable();
+            $("#droppable").droppable({
+                drop: function( event, ui) {
+                alert(event);
+
+                }
+
+                });
+           
+
+ 
+        </script>
+
+    </body>
+
+</html>

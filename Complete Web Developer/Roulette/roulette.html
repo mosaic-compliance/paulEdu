@@ -1,0 +1,65 @@
+
+<html>
+<head>
+	<title>Roulette Simulation</title>
+</head>
+<body>
+	<h1>Are you feeling Lucky?</h1>
+	<p id="cBalance">Balance: $100</p>
+	<p id ="average"></p>
+	<p>Bet Amount:  
+		<select id="bAmt">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+		</select>
+	<p>Select a color to bet on:  
+		<select id="bCol">
+			<option>red</option>
+			<option>black</option>
+			<option>green</option>
+		</select>
+	</p>
+	<p>Select a strategy for placing your bets:  
+		<select id="bStrat">
+			<option>Wait for X number of REDS in a row</option>
+			<option>Wait for X number of BLACKS in a row</option>
+			<option>Wait for X number of GREENS in a row </option>
+		</select>
+	</p>
+
+	<p>Select an X:  
+		<select id="bX">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+		</select>
+	</p>
+	<p><button id="runSim">Run Simulation</button></p>
+  	<div id="chartContainer" style="height: 300px; width: 100%;">
+ 	</div>
+	<div id ="results">
+		
+
+	</div>
+</body>
+
+<script type="text/javascript" src="roulette_java.js"></script>
+
+
+</html>

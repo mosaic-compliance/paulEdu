@@ -1,0 +1,59 @@
+
+
+<html>
+
+    <head>
+        
+        <title>jquery</title>
+
+        <script type = "text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+            #circle {
+                width:150px;
+                height:150px;
+                background-color: green;
+                border-radius: 50%;
+                margin:10px;
+            }
+            .square {
+                width:150px;
+                height:150px;
+                background-color: red;
+                margin:10px;
+            }
+
+                
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div id ="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <p id="sText">some text</p>
+        <p><button id="fOut">fade out</button></p>
+
+        <script type="text/javascript">
+
+            $("div").click(function(){
+                $(this).fadeOut("slow",function() {
+                    alert("Fadeout has finished")
+                });
+
+            });
+
+
+            $("#fOut").click(function(){
+                $("#sText").fadeOut("slow")
+
+            })
+      
+        </script>
+
+    </body>
+
+</html>

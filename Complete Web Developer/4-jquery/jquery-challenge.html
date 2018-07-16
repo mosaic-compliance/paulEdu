@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Challenge</title>
+
+        <script type = "text/javascript" src="jquery.min.js"></script>
+
+        <script src="jquery-ui/jquery-ui.js"></script>
+
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+	<style id="outputCSS" type="text/css">
+	body {
+		padding:0px;
+		margin: 0px;
+		font-family: helvetica, sans-serif; 
+}
+
+	.textEdit {
+		width:24%;
+		height:100%;
+		float:left;
+			}
+	#output {
+		width: 24%;
+		height: 100.5%;
+		border-bottom:1px solid black;
+		float:left;
+	}
+	#container {
+		height: 800px;
+
+	}
+	#navbar{
+		height: 50px;
+		background-color: #EEEDEF;
+
+	}
+
+	.tSwitch{
+		margin:4px 0px;
+		float:left;
+		height:40px;
+
+	}
+
+	#htmlBut{
+		margin-left:34%;
+	}
+	#clear {
+		clear:both;
+	}
+	#htmlEdit{
+			margin-left: 1.5%
+	}
+	#pageTitle{
+		float:left;
+		font-size: 170%;
+		font-weight: bold;
+		padding-top: 5px;
+		margin-left:1.5%;
+	}
+	#outPanel{
+		height: 100%;
+		width:100%;		
+	}
+	</style>
+
+</head>
+
+<body>
+		<div id="navbar">
+				<span id="pageTitle">CodePlayer</span>
+				<nav>
+					<button class = "tSwitch" id="htmlBut">HTML</button>
+					<button class = "tSwitch" id="cssBut">CSS</button>
+					<button class = "tSwitch" id="jsBut">JAVASCRIPT</button>
+					<button class = "tSwitch" id="outBut">Output</button>
+				</nav>
+
+		<div>
+		<div id="clear"></div>
+		<div id="container">
+			<textarea name = "htmlText" id="htmlEdit" class="textEdit"></textarea>
+			<textarea id="cssEdit" class="textEdit"></textarea>
+			<textarea id="jsEdit" class="textEdit"></textarea>
+			<div id="output">
+				<iframe id="outPanel" class="panel"></iframe>
+
+			</div>
+		</div>
+</body>
+
+<script type="text/javascript">
+
+	function hideBox (id){
+	$(id).toggle();
+    };
+
+    $("#htmlBut").click(function(){
+    	var id = "#htmlEdit"
+    	hideBox(id)
+    });
+        $("#cssBut").click(function(){
+    	var id = "#cssEdit"
+    	hideBox(id)
+    });
+    $("#jsBut").click(function(){
+    	var id = "#jsEdit"
+    	hideBox(id)
+    });
+    $("#outBut").click(function(){
+    	var id = "#output"
+    	hideBox(id)
+    });
+
+    	$("#htmlEdit").keyup(function(){
+    		$("#htmlBody").html($("#htmlEdit").val())
+    	})
+    	$("#cssEdit").keyup(function(){
+    		$("#outputCSS").css($("#cssEdit").val())
+    	})
+    	$("#jsEdit").keyup(function(){
+    		$("#outputJava").html($("#jsEdit").val())
+    	})
+function updateOutput(){
+$("iframe").contents().find("html").html("<html><head><style type ='text/css'>"+$("#cssEdit").val()+"</style></head><body>"+ $("#htmlEdit").val()+"</body></html>");
+
+document.getElementById("outPanel").contentWindow.eval($("#jsEdit").val());
+}
+    $("#htmlEdit").keyup(updateOutput);  
+    $("#cssEdit").keyup(updateOutput);
+    $("#jsEdit").keyup(updateOutput) ;
+
+        
+
+
+
+
+
+
+ </script>
+</html>

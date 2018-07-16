@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <script type = "text/javascript" src="jquery.min.js"></script>
+
+        <script src="jquery-ui/jquery-ui.js"></script>
+
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+	<title>What a Fib</title>
+
+		
+</head>
+<body>
+	<button id="runFib">Run the Algorithm</button>
+	<div id ="fibOutput">Test</div>
+
+    <script type="text/javascript">
+
+    	$("#runFib").click(function(){
+    	var t
+    	t = Date.now()  
+		var fseq=[];
+		var output ="";
+		fseq[0]=1;
+		fseq[1] = 1;
+		for(i=2;i<1001;i++){
+			fseq[i]=fseq[i-1]+fseq[i-2];
+			output = output + "<p> the " +i+" number in the fibonacci sequence is "+fseq[i]+"<p>";
+			$("#fibOutput").html(output);
+
+		}
+alert((Date.now()-t)/1000)
+	});
+
+</script>
+</body>
+</html>

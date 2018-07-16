@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON.parse and JSON.stringify</title>
+
+<body>
+	<button id="btnClick">Collect</button>
+	<div id="show"></div>
+	<script type="text/javascript">
+		function collectJSON()
+			{
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.open("GET", "write-json-complex.json",false);
+				xmlhttp.send();
+				if (xmlhttp.readyState ==4 && xmlhttp.status ==200)
+				{
+					var result =xmlhttp.responseText;
+					document.getElementById("show").innerHTML=result;
+
+				}
+			}
+			document.getElementById("btnClick").onclick = collectJSON();
+	</script>
+</head>
+
+</body>
+
+</html>

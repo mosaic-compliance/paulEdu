@@ -1,0 +1,290 @@
+		#topbar {
+			width: 970px;
+			margin:0 auto;
+			height: 40px;
+		}
+		#topbar2-cont {
+			width: 100%px;
+			margin:0 auto;
+			height: 60px;
+			background-color: #B91220;
+
+		}
+		#topbar2 {
+			width: 970px;
+			margin:0 auto;
+			height: 60px;
+			background-color: #B91220;
+		}
+		.topbar3 {
+			width: 100%px;
+			margin:0 auto;
+			height: 10px;
+			background-color: #A7111D;
+		}
+		#topbar4-cont{
+			width: 100%;
+			height: 20px;
+			background-color: #A7111D;
+		}
+		#topbar4 {
+			width: 970px;
+			margin:0 auto;
+			height: 20px;
+			background-color: #A7111D;
+		}
+		#logo {
+			position:relative;
+			top:5px;
+			width: 100px;
+			float: left;
+			margin-right: 8px;
+		}
+		body {
+			margin: 0;
+			padding 0;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		.topbar-section {
+			float:left;
+			height:100%;
+			border-left: 1px #CCCCCC solid;
+
+		}
+		#signin-image {
+			height:25px;
+			margin:6px 12px;
+			float:left;
+		}
+		#signin-text {
+
+		font-weight: bold;
+		font-size:90%;
+		position:relative;
+		top:12px;
+		margin-right: 70px;
+		}
+		.topbar-text {
+		font-weight: bold;
+		font-size:85%;
+		position:relative;
+		top:12px;
+		left:8px;
+		margin-right: 16px
+		}
+		#more-text{
+					font-weight: bold;
+		font-size:85%;
+		position:relative;
+		top:12px;
+		left:8px;
+		margin-right: 60px
+		}
+		#down-arrow {
+			position: relative;
+			top: 12px;
+			margin-right:8px;
+		}
+		#search {
+			position:relative;
+			top:8px;
+			left:8px;
+		}
+		#news-text {
+			font-size:48px;
+			color:#FFFFFF;
+			position:relative;
+			top:4px;
+		}
+		.news-menu {
+			font-size:14px;
+			color:#FFFFFF;
+			border-left:2px #B94347 solid;
+			margin-right: 8px;
+			padding-left: 8px;
+			float:left;
+		}
+		#Home {
+			font-size:14px;
+			color:#FFFFFF;
+			float:left;
+			margin-right: 8px;
+		}
+		.news-menu_text {
+			position.relative;
+			margin-left:8px;
+
+		}
+		#searchbox{
+			border:none;
+			height:22px;
+			width:203px;
+			margin:8px 0px 8px 8px;
+			background-color:#E4E4E4;
+			font-size: 14px;
+			font-weight:bold;
+		}
+		#magnify {
+			height:25px;
+			position:relative;
+			left:-13px;
+			top:8px;
+		}
+		#ad-header {
+			height: 25px;
+			width:970px;
+			margin:0 auto;
+			}
+
+		#txt-ad{
+			float:right;
+			margin-top: 5px;
+			font-size: 80%;
+			font-weight:bold;
+					}
+		#ad-image{
+			height:250px;
+			width: 970px;
+			margin:0 auto;
+		}
+		#headline1 {
+			height:60px;
+			width: 970px;
+			margin:0 auto;
+
+		}
+		#tech-head {
+			position:relative;
+			top:20px;
+			font-size: 120%;
+			border-bottom: 3px #B91220 solid;
+
+		}
+		#title1 {
+			height:40px;
+			width: 970px;
+			margin:0 auto;
+		}
+
+		.title-text {
+			poistion:relative;
+			font-size: 180%;
+			font-weight:bolder;
+		}
+		.stories {
+			width: 970px;
+			margin:0 auto;
+
+		}
+		.column1 {
+			width: 230px;
+			float:left;
+			border-right: 1px #DBDBDB solid;
+
+
+		}
+		.column2 {
+			float:left;
+			padding-left: 15px;
+		}
+		.subhead-text {
+			font-size: 85%;
+			color: #5A5A5A;
+		}
+		.subhead-text2 {
+			font-size: 85%;
+		}
+		.t-since {
+			font-size: 80%;
+			color: #5A5A5A;
+			position: relative;
+			margin-top:5px;
+			float:left;
+		}
+
+		.t-since-right {
+			font-size: 80%;
+			color: #5A5A5A;
+			position: relative;
+			margin-top:5px;
+			float:left;
+
+		}
+
+
+
+		.clock-pic {
+			margin-right: 2px;
+			float:left;
+		}
+		.clock-pic-right {
+			margin-right: 2px;
+			float:left;
+			position:relative;
+			
+		}
+		.story-type{
+			font-size: 80%;
+			color: #B91220;
+			position: relative;
+			margin-top:5px;
+			padding-left:5px;
+			left: 5px;
+			float:left;
+			border-left: 1px #CCCCCC solid;
+		}
+		.story-type-right{
+			font-size: 80%;
+			color: #B91220;
+			float:left;
+			position:relative;
+			left:-12px;
+			top:6px;
+			padding-left: 6px;
+			border-left: 1px #CCCCCC solid;
+
+
+		}
+		.subtitle{ 
+			font-size: 120%;
+			font-weight: bold;
+		}
+		#topstories {
+			height: 240px;
+			border-bottom: 1px #DBDBDB solid;
+
+		}
+		#ntopstories{
+			margin-top: 10px;
+			height: 395px;
+			border-bottom: 1px #DBDBDB solid;
+
+		}
+		#middlestories {
+			width: 230px;
+			float:left;
+			border-right: 1px #DBDBDB solid;
+			padding-left: 15px
+
+
+		}
+		#right-stories {
+			float: left;	
+		}
+		.right-blocks {
+			height: 131px;
+			width: 150px;
+			border-bottom: 1px #DBDBDB solid;
+			margin-top: 0px;
+			margin-left:12px;
+			margin-bottom: 8px;			
+		}
+		
+
+		.right-col-headers {
+			position: relative;
+			margin-top: -3px;
+			font-size: 110%;
+			font-weight: bold;		
+
+		}

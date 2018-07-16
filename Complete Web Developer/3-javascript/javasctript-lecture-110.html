@@ -1,0 +1,60 @@
+
+
+<html>
+
+    <head>
+        
+        <title>Javascript</title>
+    
+    </head>
+
+    <body>
+        
+       <p><select id ="textInput">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+            </select>
+        </p>
+        <button id="numSubmit">Got my Number</button>
+
+
+        <script type="text/javascript">       
+
+
+
+            document.getElementById("numSubmit").onclick=function(){                
+
+                var numFingers = document.getElementById("textInput").value;
+
+                var gotIt = false;
+
+                var numGuess = 1;
+
+                while (gotIt == false){
+
+                var cpuGuess = Math.floor(Math.random()*(6));
+
+                if (cpuGuess==numFingers) {
+
+                    gotIt = true;
+
+                    alert("CPU got it on guess "+numGuess)
+
+                } else {
+
+                    numGuess++;
+
+                }
+
+            }
+
+        }    
+        </script>
+        
+    </body>
+
+</html>

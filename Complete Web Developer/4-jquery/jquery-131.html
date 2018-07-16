@@ -1,0 +1,58 @@
+
+
+<html>
+
+    <head>
+        
+        <title>jquery</title>
+
+        <script type = "text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+
+
+            #f{
+                font-size: 25px;
+                
+            }
+
+                
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <p id="sText">some text</p>
+        <p><button id="toggle">toggle</button></p>
+
+        <script type="text/javascript">
+            var textStat = true;
+
+
+            $("#toggle").click(function(){
+
+                if (textStat){
+
+                     $("#sText").fadeOut("slow");
+
+                    textStat =false;
+
+                } else {
+                    $("#sText").fadeIn(function(){
+                        textStat =true;
+                    });
+                }
+
+               
+
+            });
+
+
+      
+        </script>
+
+    </body>
+
+</html>
