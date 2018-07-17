@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+</head>
+<body>
+
+<div id ="box" onload="convertCurrency()">
+    <h2>Currency Converter</h2>
+
+    <table>
+        <tr>
+            <td><input id="fromAmount" type="text" onkeyup="convertCurrency()"></td>
+
+            <td>
+                <select id ="from" onchange="convertCurrency()">
+                    <option value ="AUD">Australian Dollar (AUD)</option>
+                    <option value="BGN">Bulgarian Lev (BGN)</option>
+                    <option value="CAD">Canadian Dollar (CAD)</option>
+                    <option value="CHF">Swiss Franc (CHF)</option>
+                    <option value="DKK">Danish Krone (DKK)</option>
+                    <option value="GBP">Pound Sterling (GBP)</option>
+                    <option value="ILS">Israeli New Shekel (ILS)</option>
+                    <option value="INR" >Indian Rupee (INR)</option>
+                    <option value="JPY">Japanese Yen (JPY)</option>
+                    <option value="PHP">Philippine Peso (PHP)</option>
+                    <option value="RUB">Russian Ruble (RUB)</option>
+                    <option value="USD"  selected>US Dollar (USD)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input id="toAmount" type="text" disabled></td>
+
+            <td>
+                <select id ="to" onchange="convertCurrency()">
+                    <option vaue ="AUD">Australian Dollar (AUD)</option>
+                    <option value="BGN">Bulgarian Lev (BGN)</option>
+                    <option value="CAD">Canadian Dollar (CAD)</option>
+                    <option value="CHF">Swiss Franc (CHF)</option>
+                    <option value="DKK">Danish Krone (DKK)</option>
+                    <option value="GBP">Pound Sterling (GBP)</option>
+                    <option value="ILS">Israeli New Shekel (ILS)</option>
+                    <option value="INR" selected>Indian Rupee (INR)</option>
+                    <option value="JPY">Japanese Yen (JPY)</option>
+                    <option value="PHP">Philippine Peso (PHP)</option>
+                    <option value="RUB">Russian Ruble (RUB)</option>
+                    <option value="USD"d>US Dollar (USD)</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+<script type = "text/javascript" src="currencyConvert.js"></script>
+
+</body>
+
+</html>

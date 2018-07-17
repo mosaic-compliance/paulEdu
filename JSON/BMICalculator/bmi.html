@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+</head>
+<body>
+<div id ="container">
+    <h1>BMI Calculator</h1>
+    <form id="frmBMI">
+        <table>
+            <tr>
+                <td>
+                    <label for="height">Height</label>
+                </td>
+                <td>
+                    <input id ="height" name="ht" type="text">
+                </td>
+                <td>
+                    (in inches)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="weight">Weight</label>
+                </td>
+                <td>
+                    <input id ="weight" name="wt" type="text">
+                </td>
+                <td>
+                    (in lbs)
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button id="btnCalc" onclick="calculateBMI();return false">Calculate BMI</button>
+    </form>
+</div>
+<p id="result"></p>
+
+<script type = "text/javascript" src="bmiCalc.js"></script>
+
+</body>
+
+</html>
